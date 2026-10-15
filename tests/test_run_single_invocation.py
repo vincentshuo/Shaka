@@ -740,6 +740,11 @@ class SingleInvocationRunnerTest(unittest.TestCase):
             manifest = self.write_fixture(root)
             self.configure_connected_g1(manifest)
             self.require_native_motion_controller_topology(manifest)
+            # This exercises publisher identity, not the invocation deadline.
+            # Leave room for cold interpreter and nested sandbox startup in CI.
+            manifest_value = json.loads(manifest.read_text())
+            manifest_value["maximum_duration_s"] = 10.0
+            manifest.write_text(json.dumps(manifest_value), encoding="utf-8")
             previous_value = os.environ.get("SHAKA_FAKE_NATIVE_MOTION_CONTROLLER")
             os.environ["SHAKA_FAKE_NATIVE_MOTION_CONTROLLER"] = "1"
             try:
