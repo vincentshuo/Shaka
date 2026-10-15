@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "evidence_kind": "synthetic",
+  "source": "Diagnostic fixture derived from versioned g1-evaluator-v001 standard-start posture; synthetic replay timestamp; no raw historical camera or state stream. Not historical-observation acceptance.",
+  "body": {
+    "path": "body.md",
+    "sha256": "b095e55b3b5130f4082b6e8fbc1b645bf22027c8db47d7cd8c6e69fa8e0cd7bb"
+  },
+  "observation": {
+    "path": "observation.json",
+    "sha256": "e22026d20629f99bfd6cd61434652ea1f40d76061aaaf3b9cbf51495a2271452"
+  },
+  "control_contract": {
+    "path": "control.json",
+    "sha256": "8c1813abdf36128cc198307c49994b3c52258eac24b895c492668924a14b987e"
+  }
+}

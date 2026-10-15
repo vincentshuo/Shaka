@@ -187,6 +187,7 @@ def _sandbox_command(
     executable = Path(sys.executable).resolve()
     command = [
         sandbox,
+        "--unshare-user",
         *_sandbox_runtime_mounts(),
         "--tmpfs", "/tmp",
         "--tmpfs", "/run",

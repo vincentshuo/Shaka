@@ -156,6 +156,7 @@ def _inner_command(args: argparse.Namespace) -> list[str]:
     worker = Path(__file__).resolve()
     command = [
         sandbox,
+        "--unshare-user",
         "--ro-bind", "/", "/",
         "--tmpfs", "/tmp",
         "--tmpfs", "/run",
