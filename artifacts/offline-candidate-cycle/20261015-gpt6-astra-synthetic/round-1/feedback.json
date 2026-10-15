@@ -1,0 +1,22 @@
+{
+  "candidate_id": "offline-8361b42df8b448bca68ec417560d58fd-round-1",
+  "candidate_output_sha256": "558eab32fd2b1d308502b0de4b30b2a4a05f210dd893b1b6fd07adc38555afc8",
+  "candidate_package_sha256": "0d669374e27f1c170415ec3893aa09931f1cb2fc94984d28f26278e57485550d",
+  "command_publishers_created": 0,
+  "deployment_status": "admitted",
+  "diagnostics": {
+    "action_definition_id": "g1-brainco26-position-v001",
+    "candidate_output_encoding": "canonical-json",
+    "candidate_reported_command_publishers_created": 0,
+    "candidate_reported_writes": 0,
+    "inference": "completed",
+    "output_validation": "compatible",
+    "preprocessed_input_encoding": "canonical-json",
+    "preprocessing": "completed",
+    "sandbox_policy": "bubblewrap-zero-write-v1"
+  },
+  "ignored_candidate_claims": {},
+  "input_observation_sha256": "e22026d20629f99bfd6cd61434652ea1f40d76061aaaf3b9cbf51495a2271452",
+  "preprocessed_input_sha256": "c2a62b12fbb678ff174d8c55ed0232f06972ed128adfd3b676093621e3a07bc4",
+  "writes": 0
+}

@@ -1,0 +1,105 @@
+{
+  "command_publishers_created": 0,
+  "evidence_kind": "synthetic",
+  "historical_observation_acceptance": "pending; synthetic input only",
+  "input_sha256": {
+    "body.md": "b095e55b3b5130f4082b6e8fbc1b645bf22027c8db47d7cd8c6e69fa8e0cd7bb",
+    "context.json": "6b993344ba00f754b395df8d32bbe2f50f052157e7c4e165799453c92b0b8b1e",
+    "control.json": "8c1813abdf36128cc198307c49994b3c52258eac24b895c492668924a14b987e",
+    "observation.json": "e22026d20629f99bfd6cd61434652ea1f40d76061aaaf3b9cbf51495a2271452"
+  },
+  "model_version_boundary": "requested deployment identifier; provider weight revision is not exposed by CLI",
+  "physical_rollout_attempts_consumed": 0,
+  "replay_image": "sha256:a19adaa47bbb6cd9228f1a7885d7d4044f0a8e48295bead15588372174920900",
+  "requested_model": "gpt-6-astra",
+  "reuse_kind": "Codex CLI product runtime; native exec/resume; no vendored upstream source",
+  "robot_runtime_consumed_s": 0,
+  "rounds": [
+    {
+      "candidate_content_sha256": "1e31fbc0c47538884b0566c781f714ab837e34825a6490e4079da1f8ba165334",
+      "elapsed_s": 27.006364916916937,
+      "exit_code": 0,
+      "feedback": {
+        "candidate_id": "offline-8361b42df8b448bca68ec417560d58fd-round-1",
+        "candidate_output_sha256": "558eab32fd2b1d308502b0de4b30b2a4a05f210dd893b1b6fd07adc38555afc8",
+        "candidate_package_sha256": "0d669374e27f1c170415ec3893aa09931f1cb2fc94984d28f26278e57485550d",
+        "command_publishers_created": 0,
+        "deployment_status": "admitted",
+        "diagnostics": {
+          "action_definition_id": "g1-brainco26-position-v001",
+          "candidate_output_encoding": "canonical-json",
+          "candidate_reported_command_publishers_created": 0,
+          "candidate_reported_writes": 0,
+          "inference": "completed",
+          "output_validation": "compatible",
+          "preprocessed_input_encoding": "canonical-json",
+          "preprocessing": "completed",
+          "sandbox_policy": "bubblewrap-zero-write-v1"
+        },
+        "ignored_candidate_claims": {},
+        "input_observation_sha256": "e22026d20629f99bfd6cd61434652ea1f40d76061aaaf3b9cbf51495a2271452",
+        "preprocessed_input_sha256": "c2a62b12fbb678ff174d8c55ed0232f06972ed128adfd3b676093621e3a07bc4",
+        "writes": 0
+      },
+      "package": "round-1/candidate/candidate-package.json",
+      "package_sha256": "0d669374e27f1c170415ec3893aa09931f1cb2fc94984d28f26278e57485550d",
+      "round": 1,
+      "session_id": "01a13d79-99fe-7092-b3e0-fd4fd76e5f6b",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 0,
+        "input_tokens": 16392,
+        "output_tokens": 962,
+        "reasoning_output_tokens": 57
+      },
+      "usage_scope": "raw Codex turn.completed counters; resumed counters may be session-cumulative; do not sum"
+    },
+    {
+      "candidate_content_sha256": "342f12e0dd4d46e0183ba93d3db4bb77a092abf461c82fafb1465b128dcacc90",
+      "elapsed_s": 29.442448667017743,
+      "exit_code": 0,
+      "feedback": {
+        "candidate_id": "offline-70f7b061d2254bf08cc39e914da44b2c-round-2",
+        "candidate_output_sha256": "558eab32fd2b1d308502b0de4b30b2a4a05f210dd893b1b6fd07adc38555afc8",
+        "candidate_package_sha256": "f180cf58600655ebdf5a82a6ef871db0420263930fa8d8942ebde6877d75b1dd",
+        "command_publishers_created": 0,
+        "deployment_status": "admitted",
+        "diagnostics": {
+          "action_definition_id": "g1-brainco26-position-v001",
+          "candidate_output_encoding": "canonical-json",
+          "candidate_reported_command_publishers_created": 0,
+          "candidate_reported_writes": 0,
+          "inference": "completed",
+          "output_validation": "compatible",
+          "preprocessed_input_encoding": "canonical-json",
+          "preprocessing": "completed",
+          "sandbox_policy": "bubblewrap-zero-write-v1"
+        },
+        "ignored_candidate_claims": {},
+        "input_observation_sha256": "e22026d20629f99bfd6cd61434652ea1f40d76061aaaf3b9cbf51495a2271452",
+        "preprocessed_input_sha256": "6c167b2ecc098d25c05cb11d12ec7a0bf019e7ba4f5929d27e7d2c5bc0623faa",
+        "writes": 0
+      },
+      "package": "round-2/candidate/candidate-package.json",
+      "package_sha256": "f180cf58600655ebdf5a82a6ef871db0420263930fa8d8942ebde6877d75b1dd",
+      "round": 2,
+      "session_id": "01a13d79-99fe-7092-b3e0-fd4fd76e5f6b",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 16256,
+        "input_tokens": 34249,
+        "output_tokens": 2070,
+        "reasoning_output_tokens": 101
+      },
+      "usage_scope": "raw Codex turn.completed counters; resumed counters may be session-cumulative; do not sum"
+    }
+  ],
+  "runtime_sha256": "09fa44fdc37a5fc70dc1ace31235f90468a2e193d0e85f7552eab068ea2582be",
+  "runtime_version": "codex-cli 0.160.1",
+  "schema_version": 1,
+  "session_id": "01a13d79-99fe-7092-b3e0-fd4fd76e5f6b",
+  "source": "Diagnostic fixture derived from versioned g1-evaluator-v001 standard-start posture; synthetic replay timestamp; no raw historical camera or state stream. Not historical-observation acceptance.",
+  "status": "completed",
+  "task_result": null,
+  "writes": 0
+}

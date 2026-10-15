@@ -530,8 +530,13 @@ def main() -> int:
         runtime = shutil.which(args.codex)
         if runtime is None:
             raise RuntimeError("Codex runtime is unavailable")
+        runtime = str(Path(runtime).resolve())
         version_result = subprocess.run(
-            [runtime, "--version"], text=True, capture_output=True, timeout=10, check=False
+            [runtime, "--version"],
+            text=True,
+            capture_output=True,
+            timeout=10,
+            check=False,
         )
         if version_result.returncode:
             raise RuntimeError("Codex runtime version check failed")

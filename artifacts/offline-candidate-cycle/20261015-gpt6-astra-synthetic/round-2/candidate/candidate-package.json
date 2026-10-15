@@ -1,0 +1,34 @@
+{
+  "artifacts": {
+    "action_definition": {
+      "path": "action.json",
+      "sha256": "96ace99c4130ce45005b38e8b2e88ff2418f029c80a8b08a54908951e22ca064"
+    },
+    "configuration": {
+      "path": "configuration.json",
+      "sha256": "90dbfbf9cbc232f6181575cecfaab4ad8be8f6ea72a7af4a514bf9fc696a95f1"
+    },
+    "implementation": {
+      "path": "implementation.py",
+      "sha256": "5a64b5f0d9002046386d0f88b1be16688ecb25ae6d19462c57c6dc6a9d2dc797"
+    },
+    "input_preprocessor": {
+      "path": "preprocess.py",
+      "sha256": "4b8c8e7567ade771284e4a48e4e0169e6d6b456fb96ec975deca3a0965849072"
+    }
+  },
+  "candidate_id": "offline-70f7b061d2254bf08cc39e914da44b2c-round-2",
+  "runtime": {
+    "inference": {
+      "artifact": "implementation",
+      "callable": "infer"
+    },
+    "kind": "python-callable-v1",
+    "preprocess": {
+      "artifact": "input_preprocessor",
+      "callable": "preprocess"
+    }
+  },
+  "schema_version": 1,
+  "source_version": "gpt-6-astra/codex-cli 0.160.1/01a13d79-99fe-7092-b3e0-fd4fd76e5f6b/round-2"
+}

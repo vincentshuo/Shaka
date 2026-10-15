@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import hashlib
 import json
+import os
 import subprocess
 import sys
 import tempfile
@@ -13,6 +14,15 @@ SCRIPT = ROOT / "scripts" / "run_offline_candidate_cycle.py"
 
 
 class OfflineCandidateCycleTest(unittest.TestCase):
+    def test_relative_runtime_path_works_after_switching_to_round_directory(
+        self,
+    ) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            runtime = Path(os.path.relpath(self.runtime(root), Path.cwd()))
+            result = self.run_cycle(root, self.fixture(root), runtime)
+            self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+
     def fixture(self, root: Path) -> Path:
         action = {
             "schema_version": 1,

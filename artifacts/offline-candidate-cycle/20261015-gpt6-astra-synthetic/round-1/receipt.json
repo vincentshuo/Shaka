@@ -1,0 +1,13 @@
+{
+  "elapsed_s": 27.006364916916937,
+  "exit_code": 0,
+  "session_id": "01a13d79-99fe-7092-b3e0-fd4fd76e5f6b",
+  "usage": {
+    "cache_write_input_tokens": 0,
+    "cached_input_tokens": 0,
+    "input_tokens": 16392,
+    "output_tokens": 962,
+    "reasoning_output_tokens": 57
+  },
+  "usage_scope": "raw Codex turn.completed counters; resumed counters may be session-cumulative; do not sum"
+}

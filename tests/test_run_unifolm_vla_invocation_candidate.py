@@ -151,6 +151,8 @@ class UniFoLMInvocationCandidateTest(unittest.TestCase):
             action_plan = root / "action-plan.json"
             static_admission = root / "static-admission.json"
             trace = root / "controller-trace.json"
+            training_audit = root / "training-audit.json"
+            training_audit.write_text("{}", encoding="utf-8")
 
             def fake_preflight(
                 command: list[str], timeout_s: float, environment: dict[str, str] | None = None
@@ -189,6 +191,8 @@ class UniFoLMInvocationCandidateTest(unittest.TestCase):
 
             with patch.object(MODULE, "_run_preflight", fake_preflight), patch.object(
                 MODULE, "STATIC_INPUTS", {}
+            ), patch.object(
+                MODULE, "TRAINING_AUDIT", training_audit
             ), patch.object(MODULE, "project", lambda plan, _: plan), patch.object(
                 MODULE,
                 "validate",

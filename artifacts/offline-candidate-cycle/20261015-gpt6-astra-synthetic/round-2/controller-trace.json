@@ -1,0 +1,15 @@
+{
+  "checkpoint_digest": "f180cf58600655ebdf5a82a6ef871db0420263930fa8d8942ebde6877d75b1dd",
+  "frames": [
+    {
+      "candidate_age_ms": 0.0,
+      "candidate_source_time_ns": 1792032799578761180,
+      "loop_now_ns": 1792032799578761180,
+      "phase": "act_task"
+    }
+  ],
+  "loop_clock_id": "local_utc_ns",
+  "outcome": "running",
+  "protocol": "shaka.offline-controller-trace.v1",
+  "schema_version": 1
+}
