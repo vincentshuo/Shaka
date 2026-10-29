@@ -44,17 +44,17 @@ Qwen 在第二轮把第一轮三个失败检查逐项映射为控制量变化：
 
 本次正式周期为 `qwen-cycle-0be3f41b-a390754c`，两次百炼 Request ID 分别是 `chatcmpl-c7dd766d-e698-9239-b713-423b7d26f2cb` 与 `chatcmpl-00e923b3-6b35-970b-97bb-7dd390696bc9`，合计 3490 tokens。
 
-在它之前，一次正式运行得到 `adjust → adjust`：第二轮控制量为 `450 ms / 0.92 / 1.15`，接触误差仍为 `3.05 mm`。当时主目录被后续运行替换，未保留完整逐文件回执；仓库以 [失败周期披露](https://raw.githubusercontent.com/v6582374-netizen/Shaka/main/artifacts/qwen-feedback-cycle/failed-cycle-disclosure.json) 保存已捕获摘要并明确这一证据缺口。当前脚本会把未来的非成功周期自动保存在独立失败目录，不再覆盖或隐去。
+在它之前，一次正式运行得到 `adjust → adjust`：第二轮控制量为 `450 ms / 0.92 / 1.15`，接触误差仍为 `3.05 mm`。当时主目录被后续运行替换，未保留完整逐文件回执；仓库以 [失败周期披露](https://raw.githubusercontent.com/vincentshuo/Shaka/main/artifacts/qwen-feedback-cycle/failed-cycle-disclosure.json) 保存已捕获摘要并明确这一证据缺口。当前脚本会把未来的非成功周期自动保存在独立失败目录，不再覆盖或隐去。
 
 ## 脱敏回执与复现
 
-- [完整案例目录](https://github.com/v6582374-netizen/Shaka/tree/main/artifacts/qwen-feedback-cycle)
-- [两轮摘要](https://raw.githubusercontent.com/v6582374-netizen/Shaka/main/artifacts/qwen-feedback-cycle/cycle-summary.json)
-- [Qwen 脱敏回执](https://raw.githubusercontent.com/v6582374-netizen/Shaka/main/artifacts/qwen-feedback-cycle/qwen-receipts.json)
-- [计划差异](https://raw.githubusercontent.com/v6582374-netizen/Shaka/main/artifacts/qwen-feedback-cycle/plan-diff.json)
-- [三种反馈策略对照](https://raw.githubusercontent.com/v6582374-netizen/Shaka/main/artifacts/qwen-feedback-cycle/method-comparison.json)
-- [参数空间审计](https://raw.githubusercontent.com/v6582374-netizen/Shaka/main/artifacts/qwen-feedback-cycle/parameter-space-audit.json)
-- [SHA-256 manifest](https://raw.githubusercontent.com/v6582374-netizen/Shaka/main/artifacts/qwen-feedback-cycle/artifact-manifest.json)
+- [完整案例目录](https://github.com/vincentshuo/Shaka/tree/main/artifacts/qwen-feedback-cycle)
+- [两轮摘要](https://raw.githubusercontent.com/vincentshuo/Shaka/main/artifacts/qwen-feedback-cycle/cycle-summary.json)
+- [Qwen 脱敏回执](https://raw.githubusercontent.com/vincentshuo/Shaka/main/artifacts/qwen-feedback-cycle/qwen-receipts.json)
+- [计划差异](https://raw.githubusercontent.com/vincentshuo/Shaka/main/artifacts/qwen-feedback-cycle/plan-diff.json)
+- [三种反馈策略对照](https://raw.githubusercontent.com/vincentshuo/Shaka/main/artifacts/qwen-feedback-cycle/method-comparison.json)
+- [参数空间审计](https://raw.githubusercontent.com/vincentshuo/Shaka/main/artifacts/qwen-feedback-cycle/parameter-space-audit.json)
+- [SHA-256 manifest](https://raw.githubusercontent.com/vincentshuo/Shaka/main/artifacts/qwen-feedback-cycle/artifact-manifest.json)
 
 本地重新运行会产生新的百炼 Request ID：
 

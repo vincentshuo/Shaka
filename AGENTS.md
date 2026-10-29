@@ -2,7 +2,7 @@
 
 ### Issue tracker
 
-Issues are tracked in GitHub Issues for `v6582374-netizen/Shaka`. See `docs/agents/issue-tracker.md`.
+Issues are tracked in GitHub Issues for `vincentshuo/Shaka`. See `docs/agents/issue-tracker.md`.
 
 ### Triage labels
 

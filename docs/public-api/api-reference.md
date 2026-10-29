@@ -1,6 +1,6 @@
 # API 契约
 
-完整机器可读定义：[OpenAPI 3.1](https://raw.githubusercontent.com/v6582374-netizen/Shaka/main/submission_api/openapi.json)。本地服务也在 `/openapi.json` 暴露同一文件。
+完整机器可读定义：[OpenAPI 3.1](https://raw.githubusercontent.com/vincentshuo/Shaka/main/submission_api/openapi.json)。本地服务也在 `/openapi.json` 暴露同一文件。
 
 ## `GET /v1/health`
 

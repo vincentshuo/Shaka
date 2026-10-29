@@ -1,7 +1,7 @@
 # Issue tracker: GitHub
 
 Issues and specifications live in the GitHub repository
-`v6582374-netizen/Shaka`. Use the `gh` CLI for issue operations.
+`vincentshuo/Shaka`. Use the `gh` CLI for issue operations.
 
 ## Common operations
 

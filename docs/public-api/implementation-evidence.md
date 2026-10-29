@@ -58,7 +58,7 @@ Shaka 当前实现的是计划级自进化，而不是模型训练或机器人�
 
 ## 5. 指标公式与来源
 
-以下公式来自 [`submission_api/core.py`](https://github.com/v6582374-netizen/Shaka/blob/main/submission_api/core.py) 的 `_nominal_metrics`。它们是验证反馈链路的确定性测试夹具，不是传感器模型或机器人动力学。
+以下公式来自 [`submission_api/core.py`](https://github.com/vincentshuo/Shaka/blob/main/submission_api/core.py) 的 `_nominal_metrics`。它们是验证反馈链路的确定性测试夹具，不是传感器模型或机器人动力学。
 
 令：
 
@@ -119,7 +119,7 @@ minimum_clearance_mm >= 40
 
 ## 8. 第一轮到第二轮的证据映射
 
-程序核对的映射保存在 [`plan-diff.json`](https://raw.githubusercontent.com/v6582374-netizen/Shaka/main/artifacts/qwen-feedback-cycle/plan-diff.json)：
+程序核对的映射保存在 [`plan-diff.json`](https://raw.githubusercontent.com/vincentshuo/Shaka/main/artifacts/qwen-feedback-cycle/plan-diff.json)：
 
 | 第一轮未达项 | 观测/门槛 | Qwen 第二轮变化 |
 |---|---|---|
@@ -131,7 +131,7 @@ minimum_clearance_mm >= 40
 
 ## 9. 45 点参数空间审计
 
-[`parameter-space-audit.json`](https://raw.githubusercontent.com/v6582374-netizen/Shaka/main/artifacts/qwen-feedback-cycle/parameter-space-audit.json) 枚举：
+[`parameter-space-audit.json`](https://raw.githubusercontent.com/vincentshuo/Shaka/main/artifacts/qwen-feedback-cycle/parameter-space-audit.json) 枚举：
 
 - 5 个观察时长：250、350、450、550、650 ms
 - 3 个接近幅度：0.80、0.90、1.00
@@ -141,7 +141,7 @@ minimum_clearance_mm >= 40
 
 ## 10. 主案例选择与失败周期
 
-当前主案例来自提示目标修订后的成功周期。更早一次正式周期为 `adjust → adjust`，第二轮接触误差为 `3.05 mm`。当时失败周期自动留存尚未实现，原始逐文件包被后续运行替换，只保存了捕获摘要和 Request ID；这一缺口公开记录在 [`failed-cycle-disclosure.json`](https://raw.githubusercontent.com/v6582374-netizen/Shaka/main/artifacts/qwen-feedback-cycle/failed-cycle-disclosure.json)。
+当前主案例来自提示目标修订后的成功周期。更早一次正式周期为 `adjust → adjust`，第二轮接触误差为 `3.05 mm`。当时失败周期自动留存尚未实现，原始逐文件包被后续运行替换，只保存了捕获摘要和 Request ID；这一缺口公开记录在 [`failed-cycle-disclosure.json`](https://raw.githubusercontent.com/vincentshuo/Shaka/main/artifacts/qwen-feedback-cycle/failed-cycle-disclosure.json)。
 
 因此：
 

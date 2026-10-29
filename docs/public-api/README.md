@@ -11,12 +11,12 @@
 3. 用[代表性测试案例](examples.md)验证成功、拒绝与错误路径。
 4. 用[实现与证据细节](implementation-evidence.md)核验清单、摘要与回放结果。
 
-[GitHub Codespaces 一键启动](https://codespaces.new/v6582374-netizen/Shaka?quickstart=1)
+[GitHub Codespaces 一键启动](https://codespaces.new/vincentshuo/Shaka?quickstart=1)
 
 ## 最短调用
 
 ```bash
-git clone https://github.com/v6582374-netizen/Shaka.git
+git clone https://github.com/vincentshuo/Shaka.git
 cd Shaka
 python3 -m submission_api.server --host 127.0.0.1 --port 8787
 ```
@@ -41,4 +41,4 @@ curl -sS http://127.0.0.1:8787/v1/invocations \
 - [系统架构与创新](architecture.md)
 - [证据边界与真机迁移](evidence-boundary.md)
 - [P1–P20 技术报告](paper/Shaka-Technical-Report.pdf)
-- [GitHub 源码](https://github.com/v6582374-netizen/Shaka)
+- [GitHub 源码](https://github.com/vincentshuo/Shaka)

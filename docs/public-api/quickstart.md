@@ -58,7 +58,7 @@ python3 scripts/verify_qwen_feedback_cycle.py
 
 ## 5. 云端零安装
 
-点击 [创建 Codespace](https://codespaces.new/v6582374-netizen/Shaka?quickstart=1)。容器启动后会自动运行 API 并打开转发后的 8787 端口。
+点击 [创建 Codespace](https://codespaces.new/vincentshuo/Shaka?quickstart=1)。容器启动后会自动运行 API 并打开转发后的 8787 端口。
 
 ## 验证成功的标志
 

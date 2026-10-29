@@ -7,7 +7,7 @@
     "output": "shaka-system-architecture.html",
     "quality_profile": "showcase",
     "repository": {
-      "url": "https://github.com/v6582374-netizen/Shaka",
+      "url": "https://github.com/vincentshuo/Shaka",
       "revision": "e1dc329738eded54b2afa4540e95148c80d85517"
     },
     "viewBox": [1120, 500]

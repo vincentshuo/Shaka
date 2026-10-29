@@ -120,7 +120,7 @@ record without closing either issue:
 ```bash
 REPORT=/absolute/output-root/RUN-ID/terminal-report.json
 EVIDENCE=/absolute/output-root/RUN-ID/evidence/INVOCATION-ID/sha256.txt
-gh issue comment 26 --repo v6582374-netizen/Shaka --body \
+gh issue comment 26 --repo vincentshuo/Shaka --body \
   "Connected-G1 zero-write acceptance: $(jq -r .terminal_reason "$REPORT");
 terminal report: $REPORT ($(sha256sum "$REPORT" | cut -d' ' -f1));
 evidence manifest: $EVIDENCE ($(sha256sum "$EVIDENCE" | cut -d' ' -f1));

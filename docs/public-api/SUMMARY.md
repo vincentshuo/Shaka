@@ -9,4 +9,4 @@
 * [系统架构与创新](architecture.md)
 * [证据边界与真机迁移](evidence-boundary.md)
 * [技术报告 PDF](paper/Shaka-Technical-Report.pdf)
-* [GitHub 源码](https://github.com/v6582374-netizen/Shaka)
+* [GitHub 源码](https://github.com/vincentshuo/Shaka)

@@ -4,11 +4,11 @@ Shaka is a contract-first embodied skill-acquisition system for Unitree G1. It c
 
 ## Competition entry points
 
-- Public documentation and interactive test page: <https://v6582374-netizen.github.io/Shaka/>
-- One-click cloud test environment: <https://codespaces.new/v6582374-netizen/Shaka?quickstart=1>
+- Public documentation and interactive test page: <https://vincentshuo.github.io/Shaka/>
+- One-click cloud test environment: <https://codespaces.new/vincentshuo/Shaka?quickstart=1>
 - OpenAPI contract: [`submission_api/openapi.json`](submission_api/openapi.json)
 - Technical paper: [`deliverables/Shaka-Technical-Report.pdf`](deliverables/Shaka-Technical-Report.pdf)
-- Source repository: <https://github.com/v6582374-netizen/Shaka>
+- Source repository: <https://github.com/vincentshuo/Shaka>
 
 ## Test the API without a robot
 

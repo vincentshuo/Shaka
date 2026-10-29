@@ -78,7 +78,7 @@ def build_capabilities() -> dict[str, Any]:
             {"id": "guardian_absent", "purpose": "Pre-motion hardware-boundary refusal."},
         ],
         "links": {
-            "source": "https://github.com/v6582374-netizen/Shaka",
+            "source": "https://github.com/vincentshuo/Shaka",
             "openapi": "/openapi.json",
             "interactive_demo": "/",
             "qwen_feedback_evidence": "/v1/qwen/evidence",
@@ -330,7 +330,7 @@ def run_invocation(payload: Any) -> dict[str, Any]:
             "human_audit_required_for_physical_claim": True,
         },
         "provenance": {
-            "source": "https://github.com/v6582374-netizen/Shaka",
+            "source": "https://github.com/vincentshuo/Shaka",
             "claim_boundary": "This result proves API and lifecycle form only; it is not physical G1 evidence.",
         },
     }
